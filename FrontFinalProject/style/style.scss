@@ -1,0 +1,732 @@
+// Start of the header 
+header {
+    height: 90px;
+    width: 100%;
+    .container-fluid {
+        background: #01b7f2;
+        height: 30px;
+        .container {
+            .row {
+                .left-side {
+                    height: 30px;
+                    .main-list {
+                        padding: 0;
+                        li:nth-of-type(2) {
+                            &:hover {
+                                .lang-dropdown {
+                                    display: block;
+                                    z-index: 2;
+                                }
+                            }
+                        }
+                        li {
+                            list-style: none;
+                            margin-right: 20px;
+                            .lang-dropdown {
+                                border: 2px solid #01b7f2;
+                                width: 170px;
+                                margin-left: -15px;
+                                margin-top: 4px;
+                                height: 395px;
+                                display: none;
+                                background: white;
+                                z-index: 9;
+                                position: absolute;
+                                li {
+                                    height: 30px;
+                                    margin-right: 0px;
+                                    width: 100%; 
+                                    &:hover {
+                                        background: #f5f5f5;
+                                        cursor: pointer;
+                                        a {
+                                            color: #01b7f2;
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                                a {
+                                    color: #838383;
+                                    font-size: 11px;
+                                    font-family: 'Lato', sans-serif;
+                                    padding-left: 20px;
+                                    position: relative;
+                                    
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 125px;
+                                        height: 1px;
+                                        background: #f5f5f5;
+                                        bottom: -10px;
+                                    }
+                                }
+                                li:last-child{
+                                    a::before {
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                            i {
+                                color: white;
+                                font-size: 10px;
+                                margin-left: 5px;
+                            }
+                            a {
+                                font-size: 10px;
+                                color: white;
+                                font-family: 'Lato', sans-serif;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .right-side {
+                    .right-list {
+                        .purchase {
+                            width: 125px;
+                            background: #fdb714;
+                            height: 30px;
+                            cursor: pointer;
+                            &:hover {
+                                background-color: #e9b02b;
+                            }
+                        }
+                        li {
+                            margin-left: 20px;
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                font-size: 10px;
+                                color: white;
+                                font-family: 'Lato', sans-serif;
+                            }
+                            i {
+                                color: white;
+                                font-size: 10px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+                .logo {
+                    height: 60px;
+                    z-index: -1;
+                }
+                .nav-bar {
+                    height: 60px;
+                    .navigation-bar {
+                        list-style: none;
+                        li{
+                            a {
+                                text-decoration: none;
+                                color: #9e9e9e;
+                                font-size: 12px;
+                                font-weight: 600;
+                                &:hover {
+                                    color: #01b7f2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the header
+// Start of the slider section
+#slider {
+    .row {
+        width: 100%;
+        .slider-window {
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+
+            .photo-lent {
+                width: 500%;
+                transition: all .3s linear;
+            }
+            
+            i {
+                font-size: 40px;
+                color: #ffffff;
+                cursor: pointer;
+                z-index: 98;
+            }
+            .left-arrow {
+                left: 5%;
+            }
+            .right-arrow {
+                right: 5%;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 640px;
+            }
+        }
+    }
+}
+// End of the slider section
+// Start of the tab search section
+#search-tab {
+    .active-container {
+        display: block !important;
+    }
+    .container {
+        .row {
+            .col-md-12 {
+                z-index: 2;
+                .search-tab-list {
+                    list-style: none;
+                    li {
+                        .active {
+                            background: white;
+                            color: #01b7f2;
+                        }
+                        a {    
+                            text-decoration: none;
+                            color: rgba(0, 0, 0, 0.377);
+                            font-family: 'Lato', sans-serif;
+                            padding: 20px;
+                            font-size: 12px;
+                            font-weight: 600;
+
+                            background: rgba(255, 255, 255, 0.486);
+                            margin-right: 5px;
+                            margin-top: -40px;
+                            display: flex;
+                            align-items: center;
+                            height: 40px;
+                            &:hover {
+                                background: rgba(255, 255, 255, 0.829);
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-12 {
+                .active {
+                    height: 150px;
+                    background: rgb(129, 192, 192);
+                }
+            }
+        }
+        .row {
+            .search-tab {
+                height: 170px;
+                width: 10px;    
+                h4 {
+                    font-size: 16px;
+                    font-family: 'Lato', sans-serif;
+                }        
+                p {
+                    color: #838383;
+                    font-size: 11px;
+                }
+                input {
+                    width: 100%;
+                    background: #ebebeb;
+                    border: none;
+                    height: 30px;
+                    &::placeholder {
+                        font-size: 12px;
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .search-tab:nth-of-type(2) {
+                .search-tab-inner {
+                    height: 168px;
+                }
+            }
+            .search-tab:nth-of-type(3) {
+                .search-tab-inner {
+                    height: 168px;
+                }
+            }
+            .search-tab:nth-of-type(4) {
+                button {
+                    width: 100%;
+                    height: 30px;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 13px;
+                }
+            }
+        }
+
+    }
+}
+// End of the tab search section
+// Start of the destinations section
+#destinations {
+    background: rgb(235, 235, 235);
+    // height: 350px;
+    .container {
+        .row {
+            .col-lg-3 {
+                box-sizing: border-box;
+                height: 200px;
+                .img-box {
+                    width: 100%;
+                    height: 70%;
+                    overflow: hidden;
+                    position: relative;
+                    .img-overlay {
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(21, 126, 129, 0);
+                        position: absolute;
+                        top: 0;
+                        transform: scale(0.5);
+                        transition: all .3s linear;
+                        .fa-plus {
+                            color: rgba(255, 255, 255, 0);
+                            font-size: 20px;
+                            position: absolute;
+                            border: 4px solid rgba(255, 255, 255, 0);
+                            border-radius: 50%;
+                            padding: 15px;
+                        }
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                        .img-overlay {
+                            transform: rotateY(180deg) scale(1); 
+                            background: rgba(24, 167, 172, 0.616);  
+                            .fa-plus {
+                                border: 4px solid rgba(255, 255, 255, 0.616);
+                                color: rgba(255, 255, 255, 0.616);
+                            }                         
+                        }
+                        cursor: pointer;
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        transition: all .3s linear;
+                    }
+                }
+                .text-box {
+                    width: 100%;
+                    height: 30%;
+                    background: white;
+                    padding: 10px;
+                    position: relative;
+                    span:nth-of-type(1) {
+                        font-size: 16px;
+                        font-family: 'Lato', sans-serif;
+                        color: #414141;
+                        position: relative;
+                        &::before{
+                            content: "PARIS";
+                            position: absolute;
+                            color: rgb(143, 143, 143);
+                            bottom: -17px;
+                            font-size: 12px;
+                            font-family: 'Lato', sans-serif;
+                        }
+                    }
+                    span:nth-of-type(2) {
+                        font-size: 12px;
+                        color: rgb(143, 143, 143);
+                        position: absolute;
+                        right: 10px;
+                        &::after {
+                            content: "$490";
+                            color: green;
+                            position: absolute;
+                            right: 0px;
+                            bottom: -22px;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the destinations section
+// Start of the popular destinations section
+#popular-destinations {
+    background-image: url("../images/global-map.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .container {
+        .row {
+            .col-lg-6 {
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+            .col-lg-6 {
+                h4 {
+                    font-size: 24px;
+                    color: white;
+                }
+                p {
+                    font-size: 13px;
+                    color: #7c9abd;
+                }
+                .row {
+                    .col-lg-4 {
+                        height: 260px;
+                        .inner-box {
+                            width: 100%;
+                            height: 260px;
+                            .img-box {
+                                width: 100%;
+                                height: 60%;
+                                &:hover {
+                                    .img-overlay {
+                                        transform: rotateY(180deg) scale(1); 
+                                        background: rgba(184, 187, 28, 0.589);
+                                        i {
+                                            color: rgb(255, 255, 255);
+                                            border: 4px solid rgb(255, 255, 255);
+                                        }
+                                    }
+                                }
+                                cursor: pointer;
+                                position: relative;
+                                .img-overlay {
+                                    width: 100%;
+                                    height: 100%;
+                                    background: rgba(184, 187, 28, 0);
+                                    position: absolute;
+                                    top: 0;
+                                    transform: scale(0.5);
+                                    transition: all .3s linear;
+                                    i {
+                                        color: rgba(255, 255, 255, 0);
+                                        font-size: 20px;
+                                        position: absolute;
+                                        border: 4px solid rgba(255, 255, 255, 0);
+                                        border-radius: 50%;
+                                        padding: 15px;
+                                    }
+                                }
+                                img {
+                                    object-fit: cover;
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                            .text-box {
+                                width: 100%;
+                                height: 40%;
+                                background: white;
+                                h4 {
+                                    color: black;
+                                    font-size: 16px;
+                                    font-family: 'Lato', sans-serif;
+                                }
+                                p {
+                                    color: rgb(194, 194, 194);
+                                }
+                                button {
+                                    background: rgb(199, 199, 199);
+                                    color: white;
+                                    font-size: 10px;
+                                    width: 70px;
+                                    border: none;
+                                    &:hover {
+                                        background: rgb(85, 187, 65);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the popular destinations section
+// Start of the info section
+#info {
+    background: #ebebeb;
+    .container {
+        .row {
+            .col-lg-8 {
+                h4 {
+                    font-size: 24px;
+                    color: #2d3e52;
+                    font-family: 'Lato', sans-serif;
+                }
+                p {
+                    font-family: 'Lato', sans-serif;
+                    color: #838383;
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+        .row {
+            .inner-box {
+                height: 180px;
+                .img-box {
+                    width: 40%;
+                    height: 100%;
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text-box {
+                    width: 60%;
+                    height: 100%;
+                    background: white;
+                    h4 {
+                        color: black;
+                        font-size: 16px;
+                        font-family: 'Lato', sans-serif;
+                    }
+                    p {
+                        color: #838383;
+                        font-size: 13px;
+                    }
+                    button {
+                        background: rgb(199, 199, 199);
+                        color: white;
+                        font-size: 10px;
+                        width: 70px;
+                        border: none;
+                        &:hover {
+                            background: rgb(85, 187, 65);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the info section
+// Start of the features section
+#features {
+    background-image: url("../images/global-map.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .container {
+        .row {
+            .col-lg-3 {
+                .inner-box {
+                    height: 250px;
+                    .img-box {
+                        width: 100%;
+                        height: 30%;
+                        overflow: hidden;
+                        cursor: pointer;
+                        position: relative;
+                        .img-overlay {
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(211, 162, 27, 0.616);
+                            position: absolute;
+                            top: 0;
+                            transition: all .3s linear;
+                        }
+                        &:hover {
+                            img {
+                                transform: scale(1.1);
+                            }
+                            .img-overlay {
+                                background: rgba(211, 162, 27, 0);
+                            }
+                        }
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            transition: all .3s linear;
+                        }
+                    }
+                    .text-box {
+                        background: white;
+                        height: 70%;
+                        overflow-y: hidden;
+                        h4 {
+                            font-size: 17px;
+                            font-family: 'Lato', sans-serif;
+                        }
+                        p {
+                            font-size: 14px;
+                            color: #838383;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the features section
+// Start of the footer
+footer {
+    .container {
+        .row {
+            .col-lg-3 {
+                .inner-box {
+                    width: 100%;
+                    .list-box-holder {
+                        .list-box {
+                            ul {
+                                list-style: none;
+                                li {
+                                    font-size: 13px;
+                                    color: #838383;
+                                    margin-bottom: 10%;
+                                    cursor: pointer;
+                                    &:hover {
+                                        color: #01b7f2;
+                                        i {
+                                            color: #01b7f2;
+                                        }
+                                    }
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    h4 {
+                        font-size: 20px;
+                        font-family: 'Lato', sans-serif;
+                    }
+                }
+            }
+            .news-box {
+                .img-box {
+                    width: 30%;
+                    height: 80px;
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text-box {
+                    width: 70%;
+                    height: 80px;
+                    h4 {
+                        font-size: 14px;
+                        color: #3ab3db;
+                        cursor: pointer;
+                        &:hover {
+                            color: #58d5ff;
+                        }
+                    }
+                    h6 {
+                        font-size: 13px;
+                        color: #838383;
+                        font-weight: 400;
+                    }
+                    p {
+                        font-size: 11px;
+                        color: #9e9e9e;
+                    }
+                }
+            }
+            .mail-box {
+                p {
+                    color: #838383;
+                    font-size: 13px;
+                }
+                .input-box {
+                    input {
+                        background: #e0e0e0;
+                        border: none;
+                        &::placeholder {
+                            color: #838383;
+                            padding-left: 10px;
+                            font-size: 13px;
+                        }
+                    }
+                    i {
+                        color: white;
+                        font-size: 30px;
+                        background: rgb(83, 187, 83);
+                        &:hover {
+                            background: rgb(126, 204, 126);
+                        }
+                    }
+                }
+            }
+            .about-box {
+                font-size: 13px;
+                color: #838383;
+                height: 300px;
+                h4 {
+                    color: black;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        content: "help@travelo.com";
+                        font-size: 13px;
+                        bottom: -20px;
+                        left: 0;
+                        color: #01b7f2;
+                        cursor: pointer;
+                    }
+                    i {
+                        color: #57c8ee;
+                    }
+                }
+                .icon-box {
+                    .icons {
+                        background: #e0e0e0;
+                        margin-right: 5px;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        &:hover {
+                            background: #01b7f2;
+                        }
+                        i {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the footer
+// Start of the footer logo section
+#footer-logo {
+    background: #e0e0e0;
+    .container {
+        .row {
+            .footer-box {
+                p {
+                    color: #838383;
+                }
+                i {
+                    color: black;
+                    border: 1px solid #01b7f2;
+                    padding: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+// End of the footer logo section

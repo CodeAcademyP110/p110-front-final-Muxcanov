@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- Start of the header -->
+    <header>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="p-0 left-side col-md-6">
+                        <ul class="main-list p-0 m-0 d-flex">
+                            <li><a href="#">MY ACCOUNT</a></li>
+                            <li><a href="#">ENGLISH</a><i class="fas fa-caret-down"></i>
+                                <ul class="lang-dropdown p-0">
+                                    <li><a href="#">Dansk</a></li>
+                                    <li><a href="#">Detsch</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Espanol</a></li>
+                                    <li><a href="#">Français</a></li>
+                                    <li><a href="#">Italiano</a></li>
+                                    <li><a href="#">Magyar</a></li>
+                                    <li><a href="#">Nederlands</a></li>
+                                    <li><a href="#">Norsk</a></li>
+                                    <li><a href="#">Polski</a></li>
+                                    <li><a href="#">Portugues</a></li>
+                                    <li><a href="#">Suomi</a></li>
+                                    <li><a href="#">Svenska</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-side col-md-6 p-0">
+                        <ul class="right-list p-0 m-0 d-flex justify-content-end">
+                            <li class="purchase d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-shopping-bag mr-2"></i><a style="font-size: 12px; font-weight: bold;"
+                                    href="#">PURCHASE</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">SIGNUP</a></li>
+                            <li><a href="#">USD</a><i class="fas fa-caret-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logo p-0 col-md-4 d-flex align-items-center">
+                        <img src="../images/logo.png" alt="">
+                    </div>
+                    <div class="nav-bar col-md-8 p-0 d-flex flex-column justify-content-center">
+                        <nav>
+                            <ul class="navigation-bar p-0 m-0 d-flex justify-content-between">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">HOTELS</a></li>
+                                <li><a href="#">FLIGHTS</a></li>
+                                <li><a href="#">CARS</a></li>
+                                <li><a href="#">CRUISES</a></li>
+                                <li><a href="#">TOUR</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="#">SHORTCODES</a></li>
+                                <li><a href="#">BONUS</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Start of the header -->
+    <!-- Start of the slide section -->
+    <section id="slider">
+        <div class="row m-0">
+            <div class="slider-window d-flex align-items-center">
+                <i class="left-arrow fas fa-chevron-left position-absolute"></i>
+                <i class="right-arrow fas fa-chevron-right position-absolute"></i>
+                <div style="left: 0;" class="photo-lent d-flex position-relative">
+                    <img src="../images/slider1.jpg" alt="">
+                    <img src="../images/slider2.jpg" alt="">
+                    <img src="../images/slider3.jpg" alt="">
+                    <img src="../images/slider4.jpg" alt="">
+                    <img src="../images/slider5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the slide section -->
+    <!-- Start of the search tab section -->
+    <section id="search-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="search-tab-list m-0 p-0 d-flex">
+                        <li><a data-index="1" class="active" href="#">HOTELS</a></li>
+                        <li><a data-index="2" href="#">FLIGHTS</a></li>
+                        <li><a data-index="3" href="#">FLIGHT & HOTELS</a></li>
+                        <li><a data-index="4" href="#">CARS</a></li>
+                        <li><a data-index="5" href="#">CRUISES</a></li>
+                        <li><a data-index="6" href="#">FLIGHT STATUS</a></li>
+                        <li><a data-index="7" href="#">ONLINE CHECK IN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-info="1" class="container d-none active-container">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>CHECK IN</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">CHECK OUT</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>ROOMS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #98ce44;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="2" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #ce8244;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="3" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #14b5c0;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="4" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #9e14c0;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="5" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #c0145c;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="6" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #34d396;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div data-info="7" class="container d-none">
+                <div class="row">
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex flex-column justify-content-center">
+                        <h4>Where</h4>
+                        <p>YOUR DESTINATION</p>
+                        <input type="text" placeholder="enter a destination or hotel name">
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <h4>When</h4>
+                            <p>DEPARTING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                        <div class="search-tab-inner col-md-6 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ARRIVING ON</p>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+                                max="2028-12-31">
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex">
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <h4>Who</h4>
+                            <p>INFANTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">ADULTS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                        <div class="search-tab-inner col-md-4 d-flex flex-column justify-content-center">
+                            <p style="padding-top: 25px">KIDS</p>
+                            <select>
+                                <option value="1">01</option>
+                                <option value="1">02</option>
+                                <option value="1">03</option>
+                                <option value="1">04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-tab col-lg-3 col-md-6 col-12 d-flex align-items-center">
+                        <button style="margin-top:22%; background: #55c422;">SEARCH NOW <i
+                                class="fas fa-check"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the search tab section -->
+    <!-- Start of the destinations section -->
+    <section id="destinations">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-6 col-lg-3 col-sm-6">
+                    <div class="img-box">
+                        <img src="../images/destinations01.jpg" alt="">
+                        <div class="img-overlay d-flex justify-content-center align-items-center"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="text-box">
+                        <span>Atlantis - The Palm</span>
+                        <span>FROM</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-sm-6">
+                    <div class="img-box">
+                        <img src="../images/destinations02.jpg" alt="">
+                        <div class="img-overlay d-flex justify-content-center align-items-center"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="text-box">
+                        <span>Hilton Hotel</span>
+                        <span>FROM</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-sm-6 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
+                    <div class="img-box">
+                        <img src="../images/destinations03.jpg" alt="">
+                        <div class="img-overlay d-flex justify-content-center align-items-center"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="text-box">
+                        <span>MGM Grand</span>
+                        <span>FROM</span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-sm-6 mt-3 mt-sm-3 mt-md-3 mt-lg-0">
+                    <div class="img-box">
+                        <img src="../images/destinations04.jpg" alt="">
+                        <div class="img-overlay d-flex justify-content-center align-items-center"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="text-box">
+                        <span>Crown Casino</span>
+                        <span>FROM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the destinations section -->
+    <!-- Start of the popular destinations section -->
+    <section class="pt-5" id="popular-destinations">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-sm-2 order-lg-0 order-md-2">
+                    <img src="../images/couple.png" alt="">
+                </div>
+                <div class="col-lg-6 order-sm-1 order-lg-0 order-md-1">
+                    <h4>Popular Destinations for Honeymoon</h4>
+                    <p>Nunc cursus libero purusac congue arcu cursus utsed vitae pulvinar massa idporta neque purusac Etiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                    <div class="row pt-5">
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-4">
+                            <div class="inner-box">
+                                <div class="img-box">
+                                    <img src="../images/places01.jpg" alt="">
+                                    <div class="img-overlay d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="text-box d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="m-0">Paris</h4>
+                                    <p class="m-1">(990 places)</p>
+                                    <button>SEE ALL</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-4">
+                            <div class="inner-box">
+                                <div class="img-box">
+                                    <img src="../images/places02.jpg" alt="">
+                                    <div class="img-overlay d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="text-box d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="m-0">Greece</h4>
+                                    <p class="m-1">(990 places)</p>
+                                    <button>SEE ALL</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-md-4 col-4">
+                            <div class="inner-box">
+                                <div class="img-box">
+                                    <img src="../images/places03.jpg" alt="">
+                                    <div class="img-overlay d-flex justify-content-center align-items-center">
+                                        <i class="fas fa-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="text-box d-flex flex-column justify-content-center align-items-center">
+                                    <h4 class="m-0">Australia</h4>
+                                    <p class="m-1">(990 places)</p>
+                                    <button>SEE ALL</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the popular destinations section -->
+    <!-- Start of the info section -->
+    <section class="pt-5 pb-5" id="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center">
+                    <h4>Did you know?</h4>
+                    <p>Mauris ullamcorper leo in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique. Nullam placerat lacinia dolor quis pretium. Phasellus vitae lacinia quam, at pellentesque lorem. Sed euismod turpis quis mattis fringilla.</p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-sm-4 mt-4">
+                    <div class="inner-box d-flex">
+                        <div class="img-box">
+                            <img src="../images/offers01.jpg" alt="">
+                        </div>
+                        <div class="text-box p-3 d-flex flex-column justify-content-center">
+                            <h4>Hire Cars</h4>
+                            <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+                            <button>SEE ALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-sm-4 mt-4">
+                    <div class="inner-box d-flex">
+                        <div class="img-box">
+                            <img src="../images/offers02.jpg" alt="">
+                        </div>
+                        <div class="text-box p-3 d-flex flex-column justify-content-center">
+                            <h4>Hire Cars</h4>
+                            <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+                            <button>SEE ALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-md-4 mt-sm-4 mt-4">
+                    <div class="inner-box d-flex">
+                        <div class="img-box">
+                            <img src="../images/offers03.jpg" alt="">
+                        </div>
+                        <div class="text-box p-3 d-flex flex-column justify-content-center">
+                            <h4>Hire Cars</h4>
+                            <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+                            <button>SEE ALL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 mt-md-4 mt-sm-4 mt-4">
+                    <div class="inner-box d-flex">
+                        <div class="img-box">
+                            <img src="../images/offers04.jpg" alt="">
+                        </div>
+                        <div class="text-box p-3 d-flex flex-column justify-content-center">
+                            <h4>Hire Cars</h4>
+                            <p>Nunc cursus libero purus ac congue ar lorem cursus ut sed vitae pulvinar massa idend porta nequetiam elerisque mi id.</p>
+                            <button>SEE ALL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the info section -->
+    <!-- Start of the features section -->
+    <section class="p-5" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="inner-box">
+                        <div class="img-box">
+                            <img src="../images/1.jpg" alt="">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="text-box p-3">
+                            <h4>Best Price Guarantee</h4>
+                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6">
+                    <div class="inner-box">
+                        <div class="img-box">
+                            <img src="../images/2.jpg" alt="">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="text-box p-3">
+                            <h4>Travel Insurance</h4>
+                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 mt-sm-3 mt-lg-0 mt-md-3 mt-3">
+                    <div class="inner-box">
+                        <div class="img-box">
+                            <img src="../images/3.jpg" alt="">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="text-box p-3">
+                            <h4>Why Choose Us</h4>
+                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-6 mt-sm-3 mt-lg-0 mt-md-3 mt-3">
+                    <div class="inner-box">
+                        <div class="img-box">
+                            <img src="../images/4.jpg" alt="">
+                            <div class="img-overlay"></div>
+                        </div>
+                        <div class="text-box p-3">
+                            <h4>Need Help</h4>
+                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the features section -->
+    <!-- Start of the footer -->
+    <footer class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="inner-box">
+                        <h4>Discover</h4>
+                        <div class="list-box-holder d-flex pt-3">
+                            <div class="list-box col-lg-6 p-0">
+                                <ul class="p-0">
+                                    <li><i class="fas fa-chevron-right"></i>Safety</li>
+                                    <li><i class="fas fa-chevron-right"></i>Travelo Picks</li>
+                                    <li><i class="fas fa-chevron-right"></i>Mobile</li>
+                                    <li><i class="fas fa-chevron-right"></i>Why Host</li>
+                                    <li><i class="fas fa-chevron-right"></i>Social Connect</li>
+                                    <li><i class="fas fa-chevron-right"></i>Site Map</li>
+                                </ul>
+                            </div>
+                            <div class="list-box col-lg-6 p-0">
+                                <ul class="p-0">
+                                    <li><i class="fas fa-chevron-right"></i>About</li>
+                                    <li><i class="fas fa-chevron-right"></i>Latest Jobs</li>
+                                    <li><i class="fas fa-chevron-right"></i>Press Releases</li>
+                                    <li><i class="fas fa-chevron-right"></i>Blog Posts</li>
+                                    <li><i class="fas fa-chevron-right"></i>Help Topics</li>
+                                    <li><i class="fas fa-chevron-right"></i>Policies</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="inner-box">
+                        <h4>Travel News</h4>
+                        <div class="news-box col-lg-12 d-flex p-0 pt-3">
+                            <div class="img-box">
+                                <img src="../images/news01.png" alt="">
+                            </div>
+                            <div class="text-box pl-2">
+                                <h4>Amazing Places</h4>
+                                <h6>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</h6>
+                                <p>25 Sep, 2013</p>
+                            </div>
+                        </div>
+                        <div class="news-box col-lg-12 d-flex p-0 pt-3">
+                            <div class="img-box">
+                                <img src="../images/news02.png" alt="">
+                            </div>
+                            <div class="text-box pl-2">
+                                <h4>Amazing Places</h4>
+                                <h6>Purus ac congue arcu cursus ut vitae pulvinar massaidp.</h6>
+                                <p>25 Sep, 2013</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-3 mt-3 mt-lg-0">
+                    <div class="inner-box">
+                        <h4>Mailing List</h4>
+                        <div class="mail-box pt-3">
+                            <p>Sign up for our mailing list to get latest updates and offers.</p>
+                            <div class="input-box col-lg-12 p-0 d-flex">
+                                <input type="text" placeholder="your email">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <p class="pt-3">We respect your privacy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-md-3 mt-sm-3 mt-3 mt-lg-0">
+                    <div class="inner-box">
+                        <h4>About Travelo</h4>
+                        <div class="about-box pt-3">
+                            <p>Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massaidp nequetiam lore elerisque.</p>
+                            <h4><i class="fas fa-phone"></i> 1-800-123-HELLO </h4>
+                            <div class="icon-box d-flex mt-5">
+                                <div class="icons"><i class="fab fa-twitter"></i></div>
+                                <div class="icons"><i class="fab fa-google-plus-g"></i></div>
+                                <div class="icons"><i class="fab fa-facebook-f"></i></div>
+                                <div class="icons"><i class="fab fa-linkedin-in"></i></div>
+                                <div class="icons"><i class="fab fa-vimeo-v"></i></div>
+                                <div class="icons"><i class="fas fa-basketball-ball"></i></div>
+                                <div class="icons"><i class="fab fa-flickr"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of the footer -->
+    <!-- Start of the footer logo section -->
+    <section class="p-3" id="footer-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 footer-box">
+                    <img src="../images/logo.png" alt="">
+                </div>
+                <div class="col-lg-6 footer-box d-flex justify-content-end">
+                    <p>© 2014 Travelo</p>
+                    <i class="fas fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of the footer logo section -->
+    
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+</body>
